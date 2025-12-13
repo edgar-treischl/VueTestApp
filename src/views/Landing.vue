@@ -3,7 +3,7 @@
     <!-- Hero -->
     <div class="max-w-3xl">
       <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-        Welcome to CausalityApp2
+        Welcome to CausalityApp
       </h1>
       <p class="text-gray-700 text-lg md:text-xl mb-8">
         Analyze, visualize, and understand causal relationships effortlessly.
