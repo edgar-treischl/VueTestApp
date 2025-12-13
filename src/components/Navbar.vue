@@ -2,10 +2,9 @@
   <nav class="sticky top-0 z-50 bg-white shadow-md backdrop-blur-md">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       
-      <!-- Logo -->
+      <!-- Logo (Only the icon, no text) -->
       <router-link to="/" class="flex items-center gap-2 cursor-pointer">
-        <img :src="Logo" alt="MyApp Logo" class="w-10 h-10 transition-transform duration-300 hover:scale-110" />
-        <span class="text-gray-900 font-bold text-xl">MyApp</span>
+        <img :src="Icon" alt="App Icon" class="w-10 h-10 transition-transform duration-300 hover:scale-110" />
       </router-link>
 
       <!-- Desktop Links -->
@@ -57,7 +56,7 @@
 <script setup>
 import { ref } from 'vue';
 import { useRoute } from 'vue-router';
-import Logo from '@/assets/vue.svg';
+import Icon from '@/assets/images/icon.png';  // Import the icon image
 
 // Mobile menu state
 const mobileMenuOpen = ref(false);

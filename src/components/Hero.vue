@@ -5,11 +5,11 @@
 
         <!-- Text Column -->
         <div class="md:w-7/12 text-right space-y-6">
-          <h1 class="text-6xl md:text-4xl font-heading font-bold leading-tight">
+          <h1 class="text-8xl md:text-4xl font-heading leading-tight">
             Edgar J. Treischl
           </h1>
-          <h2 class="text-sm md:text-base font-heading font-semibold uppercase tracking-wider">
-            Social scientist and R enthusiast
+          <h2 class="text-xl md:text-base font-heading font-semibold uppercase tracking-wider">
+            Data Science
           </h2>
 
           <!-- Social Links -->
@@ -28,7 +28,7 @@
           </div>
 
           <!-- Description -->
-          <p class="mt-1 text-xs md:text-sm leading-tight font-text">
+          <p class="mt-1 text-s md:text-m leading-tight font-text">
             I am a social scientist and most of my research is about evaluation, survey research, and causality. I am also an R enthusiast with a broader view on data science topics such as data visualization, NLP, machine learning. In my spare time I go jogging, swimming, or do a bike tour.
           </p>
 
