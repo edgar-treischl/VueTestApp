@@ -1,20 +1,17 @@
 <template>
-  <div id="app">
-    <Hero />
+  <div>
+    <!-- Navbar always displayed on top -->
+    <Navbar />
+    
+    <!-- Dynamic content based on the active route -->
+    <router-view />
   </div>
 </template>
 
-<script>
-import Hero from './components/Hero.vue'; // Ensure the path is correct
-
-export default {
-  name: 'App',
-  components: {
-    Hero
-  }
-};
+<script setup>
+import Navbar from './components/Navbar.vue'; // Import Navbar component
 </script>
 
-<style>
-/* Global styles here */
+<style scoped>
+/* Add any styles for the app layout */
 </style>
