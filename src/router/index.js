@@ -7,10 +7,13 @@ import Services from '../views/Services.vue';
 import Contact from '../views/Contact.vue';
 import Projects from '../views/Projects.vue';
 import ProjectDetail from '../views/ProjectDetail.vue'; // Import the new ProjectDetail page
+import TimelineView from '../views/TimelineView.vue';
+
 
 const routes = [
   { path: '/', component: Landing },  // Landing page route (Hero included here)
   { path: '/about', component: About },
+  { path: '/timeline', component: TimelineView },
   { path: '/projects', component: Projects },
   { path: '/projects/:projectId', component: ProjectDetail, props: true }, // Dynamic route for project details
   { path: '/services', component: Services },
