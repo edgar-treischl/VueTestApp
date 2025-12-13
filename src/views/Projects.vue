@@ -37,7 +37,7 @@ export default {
         {
           id: '1',
           title: "Practice R Package",
-          description: "Practice R does this.",
+          description: "The Practice R book is accompanied by an R package. This provides further learning materials that include interactive tutorials ...",
           image: Icon1, // Use the imported image for project 1
         },
         {

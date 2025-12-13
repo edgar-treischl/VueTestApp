@@ -1,16 +1,11 @@
 <template>
-  <div class="project-detail py-16 max-w-screen-xl mx-auto">
+  <div class="project-detail py-16 px-4 md:px-8 max-w-screen-xl mx-auto">
     <!-- Project Title -->
     <h1 class="text-4xl font-bold text-center text-gray-900 mb-8">{{ project.title }}</h1>
 
     <div class="project-content grid grid-cols-1 md:grid-cols-2 gap-12">
-      <!-- Project Image -->
-      <div class="image-container w-full max-w-xs mx-auto md:max-w-sm">
-        <img :src="project.image" :alt="project.title" class="w-full h-48 object-contain rounded-lg shadow-sm" />
-      </div>
-
-      <!-- Project Information -->
-      <div class="project-info flex flex-col justify-between space-y-8">
+      <!-- Project Information (Left Side on Desktop, First on Mobile) -->
+      <div class="project-info flex flex-col justify-between space-y-8 order-2 md:order-1">
         <!-- Project Description -->
         <div>
           <h2 class="text-2xl font-semibold text-gray-800 mb-4">Project Description</h2>
@@ -38,6 +33,11 @@
             Visit Project →
           </a>
         </div>
+      </div>
+
+      <!-- Project Image (Right Side on Desktop, Second on Mobile) -->
+      <div class="image-container w-full max-w-xs mx-auto md:max-w-sm order-1 md:order-2">
+        <img :src="project.image" :alt="project.title" class="w-full h-48 object-contain rounded-lg shadow-sm" />
       </div>
     </div>
   </div>
@@ -93,11 +93,6 @@ export default {
   background-color: #f4f7fc; /* Subtle light background */
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-.project-title {
-  font-family: 'Poppins', sans-serif; /* More modern font */
-  color: #333;
 }
 
 .project-detail img {
@@ -161,7 +156,7 @@ export default {
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
 }
 
-/* Responsive Styles */
+/* Extra padding for larger screens */
 @media (min-width: 768px) {
   .project-detail {
     padding-top: 5rem;
@@ -169,6 +164,14 @@ export default {
   }
   .project-content {
     gap: 16px;
+  }
+}
+
+/* For smaller screens, add left and right padding */
+@media (max-width: 767px) {
+  .project-detail {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 </style>
